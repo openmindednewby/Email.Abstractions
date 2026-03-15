@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Email.Abstractions</RootNamespace>
+    <PackageId>Email.Abstractions</PackageId>
+    <Description>Email service abstractions for multi-tenant SaaS applications. Defines IEmailService, IEmailTemplateRenderer, and email models.</Description>
+  </PropertyGroup>
+
+</Project>
