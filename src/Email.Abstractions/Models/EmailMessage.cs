@@ -39,4 +39,12 @@ public sealed record EmailMessage
   /// Optional reply-to email address.
   /// </summary>
   public string? ReplyTo { get; init; }
+
+  /// <summary>
+  /// Optional extra MIME headers to set on the outgoing message, e.g.
+  /// <c>List-Unsubscribe</c> / <c>List-Unsubscribe-Post</c> (RFC 8058) for
+  /// one-click unsubscribe on marketing/lifecycle mail. Header names and values
+  /// are written verbatim, so callers MUST validate them (allowlist + no CRLF).
+  /// </summary>
+  public IReadOnlyDictionary<string, string>? CustomHeaders { get; init; }
 }
